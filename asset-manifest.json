@@ -1,22 +1,36 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2f721396.css",
-    "main.js": "/my-portfolio/static/js/main.7c235248.js",
-    "static/js/453.44559286.chunk.js": "/my-portfolio/static/js/453.44559286.chunk.js",
+    "main.css": "/my-portfolio/static/css/main.376bee7d.css",
+    "main.js": "/my-portfolio/static/js/main.2086b818.js",
+    "static/media/Conquest.mp4": "/my-portfolio/static/media/Conquest.76d244bc13ec0db13270.mp4",
+    "static/media/Budget.mp4": "/my-portfolio/static/media/Budget.9c759836304d15059055.mp4",
+    "static/media/DJ_party_app.mp4": "/my-portfolio/static/media/DJ_party_app.313196222d094361c253.mp4",
+    "static/media/Baby_habit_tracker.mp4": "/my-portfolio/static/media/Baby_habit_tracker.af7fc08e0c8cebb5d785.mp4",
     "static/media/top_level_design.jpg": "/my-portfolio/static/media/top_level_design.dffaf39618d49c486d66.jpg",
+    "static/media/habit_tracker_2.jpg": "/my-portfolio/static/media/habit_tracker_2.b599711b1763ef2493dc.jpg",
+    "static/media/habit_tracker_3.jpg": "/my-portfolio/static/media/habit_tracker_3.afa17cc97318c7eb23aa.jpg",
+    "static/media/habit_tracker_1.jpg": "/my-portfolio/static/media/habit_tracker_1.77eeb3c5498e2dc2817a.jpg",
+    "static/media/Data_science.pdf": "/my-portfolio/static/media/Data_science.0076d6375dbc950a2b20.pdf",
+    "static/media/desktop.jpg": "/my-portfolio/static/media/desktop.a9f5125bcdb0a21f0713.jpg",
+    "static/media/programming.jpg": "/my-portfolio/static/media/programming.c6bc55a7d897096e9046.jpg",
     "static/media/maps_pages.jpg": "/my-portfolio/static/media/maps_pages.ef5808ced8bdb6e87732.jpg",
     "static/media/records_page.jpg": "/my-portfolio/static/media/records_page.2961beff6a64cf184f9a.jpg",
+    "static/media/power-plant.jpg": "/my-portfolio/static/media/power-plant.84da0aee5b6c3370427c.jpg",
     "static/media/map.jpg": "/my-portfolio/static/media/map.ccbe4a594f4782c8cd41.jpg",
     "static/media/home_page.jpg": "/my-portfolio/static/media/home_page.f9ef073eb341fa666d59.jpg",
+    "static/media/db_schema.png": "/my-portfolio/static/media/db_schema.28f3aae8674b74055ffa.png",
+    "static/media/sql_update.png": "/my-portfolio/static/media/sql_update.703d695ab847174ef49c.png",
+    "static/media/sql_view.png": "/my-portfolio/static/media/sql_view.3396a8f25050f625861a.png",
     "static/media/sip-protoype.jpeg": "/my-portfolio/static/media/sip-protoype.61dd592a341e2b456658.jpeg",
+    "static/media/SIP311_Innovation_Brief.pdf": "/my-portfolio/static/media/SIP311_Innovation_Brief.12ac4fa14f27b4a03939.pdf",
+    "static/media/Technical_Design_Document.pdf": "/my-portfolio/static/media/Technical_Design_Document.4d28a8dfbcfb654f8fdd.pdf",
     "static/media/LI-Logo.png": "/my-portfolio/static/media/LI-Logo.a95afc06831647f5fca2.png",
     "index.html": "/my-portfolio/index.html",
-    "main.2f721396.css.map": "/my-portfolio/static/css/main.2f721396.css.map",
-    "main.7c235248.js.map": "/my-portfolio/static/js/main.7c235248.js.map",
-    "453.44559286.chunk.js.map": "/my-portfolio/static/js/453.44559286.chunk.js.map"
+    "main.376bee7d.css.map": "/my-portfolio/static/css/main.376bee7d.css.map",
+    "main.2086b818.js.map": "/my-portfolio/static/js/main.2086b818.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f721396.css",
-    "static/js/main.7c235248.js"
+    "static/css/main.376bee7d.css",
+    "static/js/main.2086b818.js"
   ]
 }
