@@ -1,0 +1,74 @@
+.sip-page {
+  background: linear-gradient(180deg, #eef7fb 0%, #f6f7f9 48%, #f6f7f9 100%);
+}
+
+.sip-page figure {
+  margin: 0 auto;
+  max-width: 760px;
+  text-align: center;
+}
+
+.sip-page .content-panel {
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.18);
+}
+
+.sip-info {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 24px 0;
+}
+
+.sip-list {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.sip-image {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.sip-caption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+.sip-document {
+  border: 1px solid rgba(31, 41, 51, 0.12);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.sip-document-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.sip-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.sip-thumbnail {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.document-panel {
+  text-align: left;
+}
