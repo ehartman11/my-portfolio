@@ -1,24 +1,21 @@
 import React from 'react';
-import programmingImage from "../assets/programming.jpg";
 
 function Home() {
     return (
-        <main className="page-shell image-page" style={{ backgroundImage: `url(${programmingImage})` }}>
-            <header className="page-hero">
-                <h1 className="page-title">Ethan Hartman</h1>
-                <p className="page-subtitle">
-                    Software developer focused on full-stack development, embedded programming, and data analytics.
-                </p>
+        <div styles={styles.container}>
+            <header style={styles.header}>
+                <h1> Welcome to my portolio </h1>
+                <p> Showcasing my projects and achievements in Computer Science </p>
             </header>
 
-            <section className="content-panel">
+            <section style={styles.section}>
                 <h2> About Me </h2>
                 <p> 
                 Hi! I'm Ethan Hartman, a passionate software developer in training, 
                 specializing in full-stack development, embedded programming, and data analytics.
                 <br/><br/>
                 Currently serving as an enlisted sailor in the U.S. Navy, I have spent the last 
-                12 years operating, maintaining, and training students on submarine nuclear power plants. 
+                10 years operating, maintaining, and training students on submarine nuclear power plants. 
                 This experience has given me an in-depth understanding of current and emerging 
                 technologies in the field.
                 <br/><br/>
@@ -29,41 +26,32 @@ function Home() {
                 aspects of their work and life.  
                 </p>
             </section>
-
-            <section className="content-panel">
-                <h2>Experience</h2>
-                <div className="experience-grid">
-                    <article>
-                        <h3>U.S. Navy</h3>
-                        <p>
-                            12 years of experience supporting high-reliability nuclear power generation
-                            and engineering systems in regulated operational environments. Experience
-                            includes process control, operational testing, troubleshooting, quality
-                            assurance, technical instruction, and leading engineering watch teams.
-                        </p>
-                    </article>
-                    <article>
-                        <h3>Projects</h3>
-                        <p>
-                            Hands-on development across embedded systems, mobile apps, database design,
-                            data analytics, automation, and backend systems. Project work includes
-                            radiation data collection and mapping, maintenance and asset management,
-                            command-line workflow automation, and finance tracking tools.
-                        </p>
-                    </article>
-                    <article>
-                        <h3>School</h3>
-                        <p>
-                            Completing a Bachelor of Science in Computer Science, expected July 2026.
-                            Academic work includes software development, object-oriented programming,
-                            data structures, SQL, C++, C#, Python, data-driven solutions, and
-                            multi-platform application design.
-                        </p>
-                    </article>
-                </div>
-            </section>
-        </main>
+        </div>
     );
 }
+
+const styles = {
+    container: {
+        textAlign: "center",
+        padding: "20px",
+        fontFamily: "Arial, sans-serif"
+    },
+
+    header: {
+        backgroundColor: "#282c34",
+        color: "white",
+        padding: "40px",
+        borderRadius: "8px"
+    },
+
+    section: {
+        margin: "20px auto",
+        padding: "20px",
+        maxWidth: "600px",
+        textAlign: "left",
+        backgroundColor: "#f4f4f4",
+        borderRadius: "8px"
+    }
+};
 
 export default Home;

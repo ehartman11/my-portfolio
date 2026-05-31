@@ -1,18 +1,14 @@
 import React from 'react';
-import desktopImage from "../assets/desktop.jpg";
 
 function Boards() {
     return (
-        <main className="page-shell image-page" style={{ backgroundImage: `url(${desktopImage})` }}>
-            <header className="page-hero">
-                <h1 className="page-title">B.S. Advancing Computer Science</h1>
-                <p className="page-subtitle">
-                    Program objectives connected to software development, data-driven solutions, and multi-platform implementation.
-                </p>
+        <div styles={styles.container}>
+            <header style={styles.header}>
+                <h1> Advancing Computer Computer Science Degree Objectives </h1>
             </header>
 
-            <section className="content-panel">
-                <h2> Objectives </h2> 
+            <section style={styles.section}>
+                <h2> Featured Projects </h2> 
                 <ul>
                     <li> Document the software Development process to analyze a problem and to design, build, and test software solutions </li>
                     <li> Demonstrate software development skills using more than one programming language and development environment </li>
@@ -22,8 +18,32 @@ function Boards() {
                     <li> Within software solutions, describe, implement, and analyze data structure techniques </li>
                 </ul>
             </section>
-        </main>
+        </div>
     );
 }
+
+const styles = {
+    container: {
+        textAlign: "center",
+        padding: "20px",
+        fontFamily: "Arial, sans-serif"
+    },
+
+    header: {
+        backgroundColor: "#282c34",
+        color: "white",
+        padding: "40px",
+        borderRadius: "8px"
+    },
+
+    section: {
+        margin: "20px auto",
+        padding: "20px",
+        maxWidth: "600px",
+        textAlign: "left",
+        backgroundColor: "#f4f4f4",
+        borderRadius: "8px"
+    }
+};
 
 export default Boards;

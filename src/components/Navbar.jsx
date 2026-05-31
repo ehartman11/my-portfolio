@@ -3,17 +3,43 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <nav className="site-nav">
-            <h2 className="site-logo">Ethan Hartman</h2>
-            <div className="site-links">
-                <Link to="/" className="site-link">Home</Link>
-                <Link to="/sip" className="site-link">SIP</Link>
-                <Link to="/projects" className="site-link">Projects</Link>
-                <Link to="/boards" className="site-link">Boards</Link>
-                <Link to="/contact" className="site-link">Contact</Link>
+        <nav style={styles.navbar}>
+            <h2 style={styles.logo}> My Portfolio </h2>
+            <div style={styles.links}>
+                <Link to="/" style={styles.link}> Home </Link>
+                <Link to="/sip" style={styles.link}> SIP </Link>
+                <Link to="/projects" style={styles.link}> Projects </Link>
+                <Link to="/boards" style={styles.link}> Boards </Link>
+                <Link to="/contact" style={styles.link}> Contact </Link>
             </div>
         </nav>
     );
 }
+
+const styles = {
+    navbar: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: "#333",
+        padding: "15px 30px",
+        color: "white"
+    },
+
+    logo: {
+        margin: 0
+    },
+
+    links: {
+        display: "flex",
+        gap: "20px"
+    },
+
+    link: {
+        color: "white",
+        textDecoration: "none",
+        fontSize: "18px"
+    }
+};
 
 export default Navbar;
