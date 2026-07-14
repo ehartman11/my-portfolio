@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.376bee7d.css",
-    "main.js": "/my-portfolio/static/js/main.2086b818.js",
+    "main.css": "/my-portfolio/static/css/main.2d1086bc.css",
+    "main.js": "/my-portfolio/static/js/main.1f52902b.js",
     "static/media/Conquest.mp4": "/my-portfolio/static/media/Conquest.76d244bc13ec0db13270.mp4",
     "static/media/Budget.mp4": "/my-portfolio/static/media/Budget.9c759836304d15059055.mp4",
     "static/media/DJ_party_app.mp4": "/my-portfolio/static/media/DJ_party_app.313196222d094361c253.mp4",
@@ -21,16 +21,16 @@
     "static/media/db_schema.png": "/my-portfolio/static/media/db_schema.28f3aae8674b74055ffa.png",
     "static/media/sql_update.png": "/my-portfolio/static/media/sql_update.703d695ab847174ef49c.png",
     "static/media/sql_view.png": "/my-portfolio/static/media/sql_view.3396a8f25050f625861a.png",
+    "static/media/SIP311_Innovation_Brief.pdf": "/my-portfolio/static/media/SIP311_Innovation_Brief.e087c19ada74f1e8be45.pdf",
     "static/media/sip-protoype.jpeg": "/my-portfolio/static/media/sip-protoype.61dd592a341e2b456658.jpeg",
-    "static/media/SIP311_Innovation_Brief.pdf": "/my-portfolio/static/media/SIP311_Innovation_Brief.12ac4fa14f27b4a03939.pdf",
     "static/media/Technical_Design_Document.pdf": "/my-portfolio/static/media/Technical_Design_Document.4d28a8dfbcfb654f8fdd.pdf",
     "static/media/LI-Logo.png": "/my-portfolio/static/media/LI-Logo.a95afc06831647f5fca2.png",
     "index.html": "/my-portfolio/index.html",
-    "main.376bee7d.css.map": "/my-portfolio/static/css/main.376bee7d.css.map",
-    "main.2086b818.js.map": "/my-portfolio/static/js/main.2086b818.js.map"
+    "main.2d1086bc.css.map": "/my-portfolio/static/css/main.2d1086bc.css.map",
+    "main.1f52902b.js.map": "/my-portfolio/static/js/main.1f52902b.js.map"
   },
   "entrypoints": [
-    "static/css/main.376bee7d.css",
-    "static/js/main.2086b818.js"
+    "static/css/main.2d1086bc.css",
+    "static/js/main.1f52902b.js"
   ]
 }
