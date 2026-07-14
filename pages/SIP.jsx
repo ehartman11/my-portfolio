@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "../css/pages/sip.css";
 import PrototypeImage from "../assets/sip-protoype.jpeg";
 import Lightbox from "react-image-lightbox";
@@ -25,16 +25,41 @@ function SIP() {
   ];
 
   return (
-    <main className="page-shell sip-page">
-        <header className="page-hero">
-          <h1 className="page-title">Radiation Detector Integration with Real-Time Data Recorder</h1>
-        </header>
-        <figure>
-            <img src={PrototypeImage} alt="Prototype of the Radiation Detector" className="sip-image" />
-            <figcaption className="sip-caption">Prototype of the Radiation Detector (Image provided by Microsoft Image Creator)</figcaption>
-        </figure>
+    <main className="sip-page">
+      <section className="sip-hero" style={{ backgroundImage: `url(${PowerPlantImage})` }}>
+        <div className="sip-hero-overlay">
+          <header className="page-hero">
+            <h1 className="page-title">Radiation Detector Integration with Real-Time Data Recorder</h1>
+            <p className="page-subtitle">
+              A portable radiation survey system designed for offline mapping, local data logging, and real-time field feedback.
+            </p>
+          </header>
 
-      <div className="sip-info" style={{ backgroundImage: `url(${PowerPlantImage})` }}>
+          <div className="sip-hero-grid">
+            <figure className="sip-prototype-card">
+              <img src={PrototypeImage} alt="Prototype of the Radiation Detector" className="sip-image" />
+              <figcaption className="sip-caption">Prototype of the Radiation Detector (Image provided by Microsoft Image Creator)</figcaption>
+            </figure>
+
+            <div className="sip-snapshot" aria-label="Project snapshot">
+              <div>
+                <span>Platform</span>
+                <strong>Android + Embedded C/C++</strong>
+              </div>
+              <div>
+                <span>Storage</span>
+                <strong>Offline SQLite Records</strong>
+              </div>
+              <div>
+                <span>Field Use</span>
+                <strong>Portable Radiation Surveys</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="page-shell sip-info">
         <section className="content-panel">
           <h2>Project Description</h2>
           <p>
@@ -65,20 +90,23 @@ function SIP() {
         </section>
         
         {/* Image Gallery */}
-        <div className="sip-gallery">
-          {images.map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Prototype ${index + 1}`}
-              className="sip-thumbnail"
-              onClick={() => {
-                setPhotoIndex(index);
-                setIsOpen(true);
-              }}
-            />
-          ))}
-        </div>
+        <section className="sip-gallery-panel" aria-label="Prototype screens and design artifacts">
+          <h2>Prototype Gallery</h2>
+          <div className="sip-gallery">
+            {images.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Prototype ${index + 1}`}
+                className="sip-thumbnail"
+                onClick={() => {
+                  setPhotoIndex(index);
+                  setIsOpen(true);
+                }}
+              />
+            ))}
+          </div>
+        </section>
 
         {isOpen && (
           <Lightbox
