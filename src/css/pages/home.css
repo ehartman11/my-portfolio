@@ -1,0 +1,25 @@
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.experience-grid article {
+  border-left: 4px solid #2563eb;
+  padding-left: 16px;
+}
+
+.experience-grid h3 {
+  margin: 0 0 8px;
+  color: #111827;
+}
+
+.experience-grid p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,60 @@
+.page-shell {
+  min-height: calc(100vh - 65px);
+  padding: clamp(24px, 5vw, 56px);
+}
+
+.page-hero {
+  max-width: 920px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.page-title {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.page-subtitle {
+  max-width: 760px;
+  margin: 14px auto 0;
+  color: #4b5563;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.content-panel {
+  width: min(920px, 100%);
+  margin: 20px auto;
+  padding: clamp(20px, 4vw, 34px);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(31, 41, 51, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(31, 41, 51, 0.12);
+}
+
+.content-panel h2 {
+  margin-top: 0;
+}
+
+.content-panel p,
+.content-panel li {
+  line-height: 1.65;
+}
+
+.image-page {
+  position: relative;
+  isolation: isolate;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(246, 247, 249, 0.72);
+}

@@ -1,106 +1,159 @@
-import React from "react";
+import React, { useState } from "react";
+import "../css/pages/sip.css";
 import PrototypeImage from "../assets/sip-protoype.jpeg";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+import PrototypeImage1 from "../assets/maps_pages.jpg";
+import PrototypeImage2 from "../assets/records_page.jpg";
+import PrototypeImage3 from "../assets/home_page.jpg";
+import PrototypeImage4 from "../assets/map.jpg";
+import PrototypeImage5 from "../assets/top_level_design.jpg";
+import PowerPlantImage from "../assets/power-plant.jpg";
+import InnovationBrief from "../assets/SIP311_Innovation_Brief.pdf";
+import TechnicalDesignDocument from "../assets/Technical_Design_Document.pdf";
 
 function SIP() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+
+  const images = [
+    PrototypeImage1,
+    PrototypeImage2,
+    PrototypeImage3,
+    PrototypeImage4,
+    PrototypeImage5,
+  ];
+
   return (
-    <div style={styles.container}>
-        <h1 style={styles.header}>Radiation Detector Integration with Real-Time Data Recorder</h1>
-        <figure style={styles.figure}>
-            <img src={PrototypeImage} alt="Prototype of the Radiation Detector" style={styles.image} />
-            <figcaption style={styles.caption}>Prototype of the Radiation Detector (Image provided by Microsoft Image Creator)</figcaption>
-        </figure>
+    <main className="sip-page">
+      <section className="sip-hero" style={{ backgroundImage: `url(${PowerPlantImage})` }}>
+        <div className="sip-hero-overlay">
+          <header className="page-hero">
+            <h1 className="page-title">Radiation Detector Integration with Real-Time Data Recorder</h1>
+            <p className="page-subtitle">
+              A portable radiation survey system designed for offline mapping, local data logging, and real-time field feedback.
+            </p>
+          </header>
 
-      <section style={styles.section}>
-        <h2>Project Description</h2>
-        <p>
-          This project focuses on creating a handheld radiation detection system for nuclear propulsion technicians 
-          and private-sector radiological technicians who often work in confined spaces requiring accurate, 
-          real-time measurements.
-        </p>
-        <p>
-          How it works: <br/> 
-            <ul>
-                <li> A Geiger-Müller tube and Matrix Portal S3 microcontroller (programmed in C/C++) capture and log radiation data. </li>   
-                <li>Data is transferred via wired connection to a Kotlin-based Android tablet.</li>  
-                <li>Users interact with a secure, offline mapping interface, store readings in a local SQLite database, 
-                    and view real-time markers for immediate feedback.</li>   
-            </ul> 
-        </p>
+          <div className="sip-hero-grid">
+            <figure className="sip-prototype-card">
+              <img src={PrototypeImage} alt="Prototype of the Radiation Detector" className="sip-image" />
+              <figcaption className="sip-caption">Prototype of the Radiation Detector (Image provided by Microsoft Image Creator)</figcaption>
+            </figure>
+
+            <div className="sip-snapshot" aria-label="Project snapshot">
+              <div>
+                <span>Platform</span>
+                <strong>Android + Embedded C/C++</strong>
+              </div>
+              <div>
+                <span>Storage</span>
+                <strong>Offline SQLite Records</strong>
+              </div>
+              <div>
+                <span>Field Use</span>
+                <strong>Portable Radiation Surveys</strong>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Innovation Claim */}
-      <section style={styles.section}>
-        <h2>Innovation Claim</h2>
-        <p>
-          This system enhances mobility, usability, and efficiency compared to existing radiation monitoring solutions.  
-          Unlike traditional bulky survey equipment, this project provides:
-        </p>
-        <ul style={styles.list}>
-          <li>A portable, cost-effective alternative to proprietary systems</li>
-          <li>Integrated real-time visualization and logging</li>
-          <li>Increased accuracy in manual radiation surveys</li>
-        </ul>
-      </section>
+      <div className="page-shell sip-info">
+        <section className="content-panel">
+          <h2>Project Description</h2>
+          <p>
+            This project focuses on creating a handheld radiation detection system for nuclear propulsion technicians 
+            and private-sector radiological technicians who often work in confined spaces requiring accurate, 
+            real-time measurements.
+          </p>
+          <p>How it works:</p>
+          <ul className="sip-list">
+            <li> A Geiger-Müller tube and Matrix Portal S3 microcontroller (programmed in C/C++) capture and log radiation data. </li>   
+            <li>Data is transferred via wired connection to a Kotlin-based Android tablet.</li>  
+            <li>Users interact with a secure, offline mapping interface, store readings in a local SQLite database, 
+                and view real-time markers for immediate feedback.</li>   
+          </ul> 
+        </section>
 
-      {/* Project Resources */}
-      <section style={styles.section}>
-        <h2>Project Resources</h2>
-        <ul style={styles.list}>
-          <li>
-            <a href="/assets/SIP-Brief.docx" download target="_blank" rel="noopener noreferrer" style={styles.link}>
-              Download SIP Brief (.docx)
+        <section className="content-panel">
+          <h2>Innovation Claim</h2>
+          <p>
+            This system enhances mobility, usability, and efficiency compared to existing radiation monitoring solutions.  
+            Unlike traditional bulky survey equipment, this project provides:
+          </p>
+          <ul className="sip-list">
+            <li>A portable, cost-effective alternative to proprietary systems</li>
+            <li>Integrated real-time visualization and logging</li>
+            <li>Increased accuracy in manual radiation surveys</li>
+          </ul>
+        </section>
+        
+        {/* Image Gallery */}
+        <section className="sip-gallery-panel" aria-label="Prototype screens and design artifacts">
+          <h2>Prototype Gallery</h2>
+          <div className="sip-gallery">
+            {images.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Prototype ${index + 1}`}
+                className="sip-thumbnail"
+                onClick={() => {
+                  setPhotoIndex(index);
+                  setIsOpen(true);
+                }}
+              />
+            ))}
+          </div>
+        </section>
+
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => setIsOpen(false)}
+            onMovePrevRequest={() =>
+              setPhotoIndex((photoIndex + images.length - 1) % images.length)
+            }
+            onMoveNextRequest={() =>
+              setPhotoIndex((photoIndex + 1) % images.length)
+            }
+          />
+        )}
+
+        {/* SIP Brief Document Embedding */}
+        <section className="content-panel document-panel">
+          <h2>Project Documents</h2>
+          <div className="sip-document-links">
+            <a className="button-link" href={InnovationBrief} target="_blank" rel="noopener noreferrer">
+              View Innovation Brief
             </a>
-          </li>
-        </ul>
-      </section>
-    </div>
+            <a className="button-link" href={TechnicalDesignDocument} target="_blank" rel="noopener noreferrer">
+              View Technical Design Document
+            </a>
+          </div>
+          <embed 
+            src={InnovationBrief} 
+            type="application/pdf" 
+            width="100%" 
+            height="520px" 
+            className="sip-document"
+          />
+
+          <embed 
+            src={TechnicalDesignDocument} 
+            type="application/pdf" 
+            width="100%" 
+            height="520px" 
+            className="sip-document"
+          />
+        </section>
+
+      </div>
+    </main>
   );
 }
-
-const styles = {
-  container: {
-    textAlign: "center",
-    padding: "20px",
-    fontFamily: "Arial, sans-serif",
-  },
-  header: {
-    fontSize: "2rem",
-    marginBottom: "10px",
-  },
-  subHeader: {
-    fontSize: "1.2rem",
-    color: "#555",
-  },
-  section: {
-    marginBottom: "30px",
-    padding: "20px",
-    backgroundColor: "#f4f4f4",
-    borderRadius: "8px",
-    textAlign: "left",
-    maxWidth: "800px",
-    margin: "auto",
-  },
-  list: {
-    textAlign: "left",
-    paddingLeft: "20px",
-  },
-  image: {
-    width: "80%",
-    maxWidth: "600px",
-    borderRadius: "8px",
-    marginBottom: "20px",
-  },
-  link: {
-    color: "#0077b5",
-    textDecoration: "none",
-    fontSize: "18px",
-  },
-  caption: {
-    marginTop: "10px",
-    fontSize: "14px",
-    color: "#555",
-    fontStyle: "italic",
-  },
-};
 
 export default SIP;

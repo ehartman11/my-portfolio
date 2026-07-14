@@ -9,10 +9,10 @@ import SIP from "./pages/SIP";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-portfolio">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home />} />
         <Route path="/sip" element={<SIP/>} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/boards" element={<Boards />} />

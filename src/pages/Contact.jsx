@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LinkedInLogo from "../assets/LI-Logo.png";
+import "../css/pages/contact.css";
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -23,105 +24,58 @@ function Contact() {
             alert("Please fill the message box before submitting.");
             return;
         }
-        window.location.href = `mailto:ephartman1@gmail.com?subject=Message from ${formData.name}&body=${formData.message}`;
-        alert(`Thank you, ${formData.name}! Your message was received.`);
+        const subject = encodeURIComponent(`Message from ${formData.name}`);
+        const body = encodeURIComponent(formData.message);
+        window.location.href = `mailto:ephartman1@gmail.com?subject=${subject}&body=${body}`;
+        alert(`Thank you, ${formData.name}! Your email client should open with the message ready to send.`);
         setFormData({ name: "", message: "" });
     };
 
   return (
-    <div style={styles.container}>
-      <h1>Contact Me</h1>
-      <form onSubmit={handleSubmit} style={styles.form}>
+    <main className="page-shell">
+      <header className="page-hero">
+        <h1 className="page-title">Contact Me</h1>
+        <p className="page-subtitle">
+          Send a message or connect with me on LinkedIn.
+        </p>
+      </header>
+      <section className="content-panel contact-panel">
+      <form onSubmit={handleSubmit} className="contact-form">
         <input 
             type="text" 
             name="name"
             placeholder="Your Name"
+            aria-label="Your Name"
             value={formData.name}
             onChange={handleChange}
             required
-            style={styles.input}
+            className="contact-input"
             />
         <textarea  
             name="message"
             placeholder="Your Message"
+            aria-label="Your Message"
             value={formData.message}
             onChange={handleChange}
             required
-            style={styles.textarea}
+            className="contact-textarea"
             />
-        <button type="submit" style={styles.button}> Send </button>
+        <button type="submit" className="button-primary">Send</button>
       </form>
 
-        <div>
+        <div className="contact-linkedin">
           <a 
           href="https://www.linkedin.com/in/ethan-hartman-899b9174/" 
           target="_blank"
           rel="noopener noreferrer"
-          style={styles.link}
+          className="contact-link"
           > 
-            <img src={LinkedInLogo} alt="LinkedIn" style={styles.image}/> 
+            <img src={LinkedInLogo} alt="LinkedIn" className="contact-logo"/> 
           </a>
         </div>
-    </div>
+      </section>
+    </main>
   );
 }
-
-const styles = {
-  container: {
-    textAlign: "center",
-    padding: "20px",
-    fontFamily: "Arial, sans-serif"
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: "10px",
-    maxWidth: "400px",
-    margin: "auto",
-    padding: "20px",
-    backgroundColor: "#f4f4f4",
-    borderRadius: "8px"
-  },
-  input: {
-    width: "100%",
-    padding: "10px",
-    fontSize: "16px",
-    borderRadius: "4px",
-    border: "1px solid #ccc",
-  },
-  textarea: {
-    width: "100%",
-    height: "100px",
-    padding: "10px",
-    fontSize: "16px",
-    borderRadius: "4px",
-    border: "1px solid #ccc",
-    resize: "vertical",
-  },
-  button: {
-    padding: "10px 20px",
-    fontSize: "16px",
-    color: "white",
-    backgroundColor: "#333",
-    border: "none",
-    borderRadius: "4px",
-    cursor: "pointer",
-  },
-  links: {
-    marginTop: "20px",
-  },
-  link: {
-    display: "block",
-    fontSize: "18px",
-    margin: "10px 0",
-    color: "#0077b5",
-    textDecoration: "none",
-  },
-  image: {
-    width: "150px",
-    height: "auto"
-  }
-};
 
 export default Contact;
