@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2d1086bc.css",
-    "main.js": "/my-portfolio/static/js/main.1f52902b.js",
+    "main.css": "/my-portfolio/static/css/main.5f18d262.css",
+    "main.js": "/my-portfolio/static/js/main.85dc3e76.js",
     "static/media/Conquest.mp4": "/my-portfolio/static/media/Conquest.76d244bc13ec0db13270.mp4",
     "static/media/Budget.mp4": "/my-portfolio/static/media/Budget.9c759836304d15059055.mp4",
     "static/media/DJ_party_app.mp4": "/my-portfolio/static/media/DJ_party_app.313196222d094361c253.mp4",
@@ -26,11 +26,11 @@
     "static/media/Technical_Design_Document.pdf": "/my-portfolio/static/media/Technical_Design_Document.4d28a8dfbcfb654f8fdd.pdf",
     "static/media/LI-Logo.png": "/my-portfolio/static/media/LI-Logo.a95afc06831647f5fca2.png",
     "index.html": "/my-portfolio/index.html",
-    "main.2d1086bc.css.map": "/my-portfolio/static/css/main.2d1086bc.css.map",
-    "main.1f52902b.js.map": "/my-portfolio/static/js/main.1f52902b.js.map"
+    "main.5f18d262.css.map": "/my-portfolio/static/css/main.5f18d262.css.map",
+    "main.85dc3e76.js.map": "/my-portfolio/static/js/main.85dc3e76.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d1086bc.css",
-    "static/js/main.1f52902b.js"
+    "static/css/main.5f18d262.css",
+    "static/js/main.85dc3e76.js"
   ]
 }
