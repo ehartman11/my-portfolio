@@ -23,7 +23,7 @@ const objectives = [
         name: "Personal Finance Tracker / CSC262 SRS",
         tags: ["SRS", "Use Cases", "Quality Goals"],
         evidence:
-          "The finance tracker requirements document captures functional requirements, non-functional requirements, scope limits, security expectations, reporting needs, and user workflows. It is strong evidence of planning a solution before implementation rather than only coding from an idea."
+          "The finance tracker requirements document captures functional requirements, non-functional requirements, scope limits, security expectations, reporting needs, and user workflows. It is evidence of planning and implementating a solution."
       }
     ]
   },
@@ -35,7 +35,7 @@ const objectives = [
         name: "RadconApp / Radiation Survey Tablet System",
         tags: ["Kotlin", "Android Studio", "Room"],
         evidence:
-          "RadconApp demonstrates Android development in Kotlin using Jetpack Compose, Room persistence, Gradle, ViewModels, repositories, and device-oriented workflows. It also connects to embedded and hardware-facing concepts through detector parsing and planned wired data ingestion."
+          "This project demonstrates Android development in Kotlin using Jetpack Compose, Room persistence, Gradle, ViewModels, repositories, and device-oriented workflows. It also connects to embedded and hardware-facing concepts through detector parsing and planned wired data ingestion."
       },
       {
         name: "Moro Maintenance & Asset Management System",
@@ -47,13 +47,13 @@ const objectives = [
         name: "Jibby JSON Library",
         tags: ["C++", "CMake", "Testing"],
         evidence:
-          "Jibby demonstrates C++ library development with headers, implementation files, CMake builds, and regression tests. It shows comfort working outside web/mobile environments in a compiled systems-language workflow."
+          "Jibby demonstrates C++ library development with headers, implementation files, CMake builds, and regression tests. It shows competence working outside web/mobile environments in a compiled systems-language workflow."
       },
       {
         name: "ML_Project",
         tags: ["Python", "pandas", "scikit-learn"],
         evidence:
-          "The machine-learning projects demonstrate Python data workflows using pandas, scikit-learn pipelines, preprocessing, train/test splits, model evaluation, and generated visual outputs. This expands the portfolio beyond application UI into analytical programming."
+          "The machine-learning projects demonstrate Python data workflows using pandas, scikit-learn pipelines, preprocessing, train/test splits, model evaluation, and generated visual outputs. This demonstrates competence in analytical programming."
       }
     ]
   },
@@ -62,6 +62,7 @@ const objectives = [
     title: "Implement data-driven solutions",
     projects: [
       {
+
         name: "Moro Maintenance & Asset Management System",
         tags: ["Relational Data", "History", "Scheduling"],
         evidence:
@@ -113,7 +114,7 @@ const objectives = [
         name: "CSCS / Containment Safety Control System",
         tags: ["Interfaces", "Event Bus", "Factory"],
         evidence:
-          "CSCS is the strongest object-oriented example because it separates alarms, doors, ventilation, logging, data sources, announcements, UI, and core orchestration behind dedicated classes and interfaces. The factory and event bus designs reduce coupling and make subsystems easier to replace or extend."
+          "CSCS is a strong object-oriented example because it separates alarms, doors, ventilation, logging, data sources, announcements, UI, and core orchestration behind dedicated classes and interfaces. The factory and event bus designs reduce coupling and make subsystems easier to replace or extend."
       },
       {
         name: "RadconApp / Radiation Survey Tablet System",
