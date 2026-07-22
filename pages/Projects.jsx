@@ -11,10 +11,14 @@ import dataSciencePdf from "../assets/projects/Data_science.pdf";
 import dbSchema from "../assets/projects/db_schema.png";
 import sqlView from "../assets/projects/sql_view.png";
 import sqlUpdate from "../assets/projects/sql_update.png";
+import financeTrackerPdf from "../assets/projects/finance_tracker/Finance Tracker Application.pdf";
 import budgetVideo from "../assets/projects/Budget.mp4";
 import conquestVideo from "../assets/projects/Conquest.mp4";
 import babyHabitVideo from "../assets/projects/Baby_habit_tracker.mp4";
-import djPartyVideo from "../assets/projects/DJ_party_app.mp4";
+import cscsDemoVideo from "../assets/projects/CSCS/CSCS Demo.mp4";
+import habitTrackerOne from "../assets/projects/habit_tracker_1.jpg";
+import habitTrackerTwo from "../assets/projects/habit_tracker_2.jpg";
+import habitTrackerThree from "../assets/projects/habit_tracker_3.jpg";
 
 const projects = [
   {
@@ -62,7 +66,9 @@ const projects = [
     ],
     link: "https://github.com/ehartman11/Moro",
     linkText: "View repository",
-    mediaLinks: []
+    mediaLinks: [
+      { type: "external", href: "https://youtu.be/dHOCRgZMayM", label: "Watch demonstration" }
+    ]
   },
   {
     id: "budget-tool",
@@ -80,7 +86,10 @@ const projects = [
       "The demo asset shows a practical automation workflow rather than a static spreadsheet.",
       "The project supports Objective 01 by showing planning, implementation intent, and validation through a working finance task."
     ],
-    mediaLinks: [{ type: "video", src: budgetVideo, label: "Budget demo" }]
+    mediaLinks: [
+      { type: "pdf", src: financeTrackerPdf, label: "Finance tracker requirements" },
+      { type: "video", src: budgetVideo, label: "Budget demo" }
+    ]
   },
   {
     id: "cscs-containment-safety-control-system",
@@ -98,7 +107,7 @@ const projects = [
       "Interfaces such as data source, alarm manager, ventilation controller, logger, dashboard, and announcement service decouple subsystems.",
       "Factory wiring and publish/subscribe events demonstrate abstraction, encapsulation, and data-structure use through event objects, zone collections, state models, and log records."
     ],
-    mediaLinks: []
+    mediaLinks: [{ type: "video", src: cscsDemoVideo, label: "CSCS demo" }]
   },
   {
     id: "jibby-json-library",
@@ -116,7 +125,9 @@ const projects = [
       "Source includes tokenizer, parser, serializer, iterator, exception, file I/O, and a variant-backed Json value model.",
       "Tests cover parsing, serialization, escaping, Unicode handling, and invalid input cases."
     ],
-    mediaLinks: []
+    mediaLinks: [
+      { type: "external", href: "https://youtu.be/rtr3noH1p34", label: "Watch demonstration" }
+    ]
   },
   {
     id: "ml-project-predictive-modeling-suite",
@@ -134,7 +145,10 @@ const projects = [
       "The salary predictor evaluates model quality with MAE, MSE, R-squared, and a tolerance-based accuracy calculation.",
       "Generated plots and the data science PDF document prediction outputs and support model interpretation."
     ],
-    mediaLinks: [{ type: "pdf", src: dataSciencePdf, label: "Data science evidence" }]
+    mediaLinks: [
+      { type: "external", href: "https://youtu.be/MkFm1I2xLb4", label: "Watch demonstration" },
+      { type: "pdf", src: dataSciencePdf, label: "Data science evidence" }
+    ]
   },
   {
     id: "database-management-business-financial-statements",
@@ -176,7 +190,9 @@ const projects = [
       "The project organizes audio, image, lyric, and description assets into a usable browser presentation.",
       "It demonstrates a lightweight cross-platform web delivery model distinct from Android and desktop applications."
     ],
-    mediaLinks: [{ type: "video", src: djPartyVideo, label: "Media app demo" }]
+    link: "https://ehartman11.github.io/Dust-Echo/",
+    linkText: "Open Dust & Echo",
+    mediaLinks: [{ type: "external", href: "https://ehartman11.github.io/Dust-Echo/", label: "Open live project" }]
   },
   {
     id: "baby-habit-tracker",
@@ -194,7 +210,12 @@ const projects = [
       "The database manager creates and queries a habits table with date, time, action, and notes fields.",
       "The UI includes quick-fill actions, log viewing, scrolling display behavior, note handling, and deletion controls."
     ],
-    mediaLinks: [{ type: "video", src: babyHabitVideo, label: "Tracker demo" }]
+    mediaLinks: [
+      { type: "video", src: babyHabitVideo, label: "Tracker demo" },
+      { type: "image", src: habitTrackerOne, label: "Tracker screen one" },
+      { type: "image", src: habitTrackerTwo, label: "Tracker screen two" },
+      { type: "image", src: habitTrackerThree, label: "Tracker screen three" }
+    ]
   },
   {
     id: "conquest-reign-strategy-game-engine",
@@ -248,7 +269,9 @@ const projects = [
       "The Employee class uses private state, typed initialization arguments, getters, setters, evaluation enums, and formatted stream output.",
       "The project uses CMake and a separated include/src structure for a small but maintainable compiled application."
     ],
-    mediaLinks: []
+    mediaLinks: [
+      { type: "external", href: "https://youtu.be/RgVz5Bow5ZA", label: "Watch demonstration" }
+    ]
   }
 ];
 
@@ -361,6 +384,19 @@ function Projects() {
                           title={media.label}
                           className="project-document"
                         />
+                      );
+                    case "external":
+                      return (
+                        <a
+                          key={media.label}
+                          className="project-external-evidence"
+                          href={media.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span>{media.label}</span>
+                          <small>{media.href}</small>
+                        </a>
                       );
                     default:
                       return <p key={media.label}>Unsupported media type: {media.type}</p>;

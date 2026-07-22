@@ -177,6 +177,36 @@
   min-height: 620px;
 }
 
+.project-external-evidence {
+  display: grid;
+  gap: 8px;
+  border: 1px solid rgba(37, 99, 235, 0.24);
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 18px;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.project-external-evidence:hover,
+.project-external-evidence:focus-visible {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: white;
+  outline: none;
+}
+
+.project-external-evidence span {
+  font-weight: 800;
+}
+
+.project-external-evidence small {
+  color: inherit;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 .empty-note {
   color: #64748b;
 }
