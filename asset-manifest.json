@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.3eeaef8f.css",
-    "main.js": "/my-portfolio/static/js/main.fba98200.js",
+    "main.css": "/my-portfolio/static/css/main.a66f070a.css",
+    "main.js": "/my-portfolio/static/js/main.6ddf7094.js",
     "static/media/Conquest.mp4": "/my-portfolio/static/media/Conquest.76d244bc13ec0db13270.mp4",
     "static/media/Budget.mp4": "/my-portfolio/static/media/Budget.9c759836304d15059055.mp4",
-    "static/media/DJ_party_app.mp4": "/my-portfolio/static/media/DJ_party_app.313196222d094361c253.mp4",
+    "static/media/CSCS Demo.mp4": "/my-portfolio/static/media/CSCS Demo.7dc3f46b54a8043a2080.mp4",
     "static/media/Baby_habit_tracker.mp4": "/my-portfolio/static/media/Baby_habit_tracker.af7fc08e0c8cebb5d785.mp4",
     "static/media/top_level_design.jpg": "/my-portfolio/static/media/top_level_design.dffaf39618d49c486d66.jpg",
+    "static/media/habit_tracker_2.jpg": "/my-portfolio/static/media/habit_tracker_2.b599711b1763ef2493dc.jpg",
+    "static/media/habit_tracker_3.jpg": "/my-portfolio/static/media/habit_tracker_3.afa17cc97318c7eb23aa.jpg",
+    "static/media/habit_tracker_1.jpg": "/my-portfolio/static/media/habit_tracker_1.77eeb3c5498e2dc2817a.jpg",
     "static/media/Data_science.pdf": "/my-portfolio/static/media/Data_science.0076d6375dbc950a2b20.pdf",
     "static/media/desktop.jpg": "/my-portfolio/static/media/desktop.a9f5125bcdb0a21f0713.jpg",
     "static/media/programming.jpg": "/my-portfolio/static/media/programming.c6bc55a7d897096e9046.jpg",
@@ -19,15 +22,16 @@
     "static/media/SIP311_Innovation_Brief.pdf": "/my-portfolio/static/media/SIP311_Innovation_Brief.63c19089a6f6c9cca4db.pdf",
     "static/media/sql_update.png": "/my-portfolio/static/media/sql_update.703d695ab847174ef49c.png",
     "static/media/sql_view.png": "/my-portfolio/static/media/sql_view.3396a8f25050f625861a.png",
+    "static/media/Finance Tracker Application.pdf": "/my-portfolio/static/media/Finance Tracker Application.e61838ea37bdf648b02e.pdf",
     "static/media/sip-protoype.jpeg": "/my-portfolio/static/media/sip-protoype.61dd592a341e2b456658.jpeg",
     "static/media/Technical_Design_Document.pdf": "/my-portfolio/static/media/Technical_Design_Document.4d28a8dfbcfb654f8fdd.pdf",
     "static/media/LI-Logo.png": "/my-portfolio/static/media/LI-Logo.a95afc06831647f5fca2.png",
     "index.html": "/my-portfolio/index.html",
-    "main.3eeaef8f.css.map": "/my-portfolio/static/css/main.3eeaef8f.css.map",
-    "main.fba98200.js.map": "/my-portfolio/static/js/main.fba98200.js.map"
+    "main.a66f070a.css.map": "/my-portfolio/static/css/main.a66f070a.css.map",
+    "main.6ddf7094.js.map": "/my-portfolio/static/js/main.6ddf7094.js.map"
   },
   "entrypoints": [
-    "static/css/main.3eeaef8f.css",
-    "static/js/main.fba98200.js"
+    "static/css/main.a66f070a.css",
+    "static/js/main.6ddf7094.js"
   ]
 }
