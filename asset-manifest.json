@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.bd62757d.css",
-    "main.js": "/my-portfolio/static/js/main.6d8f52e3.js",
+    "main.css": "/my-portfolio/static/css/main.3eeaef8f.css",
+    "main.js": "/my-portfolio/static/js/main.fba98200.js",
     "static/media/Conquest.mp4": "/my-portfolio/static/media/Conquest.76d244bc13ec0db13270.mp4",
     "static/media/Budget.mp4": "/my-portfolio/static/media/Budget.9c759836304d15059055.mp4",
+    "static/media/DJ_party_app.mp4": "/my-portfolio/static/media/DJ_party_app.313196222d094361c253.mp4",
+    "static/media/Baby_habit_tracker.mp4": "/my-portfolio/static/media/Baby_habit_tracker.af7fc08e0c8cebb5d785.mp4",
     "static/media/top_level_design.jpg": "/my-portfolio/static/media/top_level_design.dffaf39618d49c486d66.jpg",
     "static/media/Data_science.pdf": "/my-portfolio/static/media/Data_science.0076d6375dbc950a2b20.pdf",
     "static/media/desktop.jpg": "/my-portfolio/static/media/desktop.a9f5125bcdb0a21f0713.jpg",
@@ -21,11 +23,11 @@
     "static/media/Technical_Design_Document.pdf": "/my-portfolio/static/media/Technical_Design_Document.4d28a8dfbcfb654f8fdd.pdf",
     "static/media/LI-Logo.png": "/my-portfolio/static/media/LI-Logo.a95afc06831647f5fca2.png",
     "index.html": "/my-portfolio/index.html",
-    "main.bd62757d.css.map": "/my-portfolio/static/css/main.bd62757d.css.map",
-    "main.6d8f52e3.js.map": "/my-portfolio/static/js/main.6d8f52e3.js.map"
+    "main.3eeaef8f.css.map": "/my-portfolio/static/css/main.3eeaef8f.css.map",
+    "main.fba98200.js.map": "/my-portfolio/static/js/main.fba98200.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd62757d.css",
-    "static/js/main.6d8f52e3.js"
+    "static/css/main.3eeaef8f.css",
+    "static/js/main.fba98200.js"
   ]
 }
