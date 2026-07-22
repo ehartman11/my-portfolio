@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import desktopImage from "../assets/desktop.jpg";
 import "../css/pages/boards.css";
 
@@ -9,18 +10,21 @@ const objectives = [
     projects: [
       {
         name: "RadconApp / Radiation Survey Tablet System",
+        projectId: "radconapp-radiation-survey-tablet-system",
         tags: ["Requirements", "Architecture", "Testing"],
         evidence:
           "This project shows a complete development path from operational problem analysis to documented requirements, architecture, implementation, and verification. The supporting traceability, storage, hardware integration, delivery, and test strategy documents connect design inputs directly to implementation targets and validation steps."
       },
       {
         name: "Moro Maintenance & Asset Management System",
+        projectId: "moro-maintenance-asset-management-system",
         tags: ["Planning", "Database Design", "Iteration"],
         evidence:
           "Moro demonstrates iterative software development through a clearly scoped maintenance problem, a deterministic data model, permission rules, task scheduling behavior, and documented design principles. Its structure shows how requirements were translated into controllers, services, repositories, authentication, and database workflows."
       },
       {
         name: "Personal Finance Tracker / CSC262 SRS",
+        projectId: "budget-tool",
         tags: ["SRS", "Use Cases", "Quality Goals"],
         evidence:
           "The finance tracker requirements document captures functional requirements, non-functional requirements, scope limits, security expectations, reporting needs, and user workflows. It is strong evidence of planning a solution before implementation rather than only coding from an idea."
@@ -33,24 +37,28 @@ const objectives = [
     projects: [
       {
         name: "RadconApp / Radiation Survey Tablet System",
+        projectId: "radconapp-radiation-survey-tablet-system",
         tags: ["Kotlin", "Android Studio", "Room"],
         evidence:
           "RadconApp demonstrates Android development in Kotlin using Jetpack Compose, Room persistence, Gradle, ViewModels, repositories, and device-oriented workflows. It also connects to embedded and hardware-facing concepts through detector parsing and planned wired data ingestion."
       },
       {
         name: "Moro Maintenance & Asset Management System",
+        projectId: "moro-maintenance-asset-management-system",
         tags: ["PHP", "MySQL", "Web"],
         evidence:
           "Moro shows web application development across PHP, SQL, HTML, CSS, and JavaScript. The project uses server-side sessions, PDO database access, environment configuration, backend authorization, and browser-based interface patterns."
       },
       {
         name: "Jibby JSON Library",
+        projectId: "jibby-json-library",
         tags: ["C++", "CMake", "Testing"],
         evidence:
           "Jibby demonstrates C++ library development with headers, implementation files, CMake builds, and regression tests. It shows comfort working outside web/mobile environments in a compiled systems-language workflow."
       },
       {
         name: "ML_Project",
+        projectId: "ml-project-predictive-modeling-suite",
         tags: ["Python", "pandas", "scikit-learn"],
         evidence:
           "The machine-learning projects demonstrate Python data workflows using pandas, scikit-learn pipelines, preprocessing, train/test splits, model evaluation, and generated visual outputs. This expands the portfolio beyond application UI into analytical programming."
@@ -63,21 +71,31 @@ const objectives = [
     projects: [
       {
         name: "Moro Maintenance & Asset Management System",
+        projectId: "moro-maintenance-asset-management-system",
         tags: ["Relational Data", "History", "Scheduling"],
         evidence:
           "Moro is built around persistent data: homes, items, tasks, schedules, permissions, and maintenance history. The application uses stored records to calculate next due dates, show urgency, preserve service history, and support user decisions from organized data."
       },
       {
         name: "RadconApp / Radiation Survey Tablet System",
+        projectId: "radconapp-radiation-survey-tablet-system",
         tags: ["SQLite", "Survey Records", "Export"],
         evidence:
           "RadconApp stores maps, surveys, survey points, notes, contamination rows, airborne rows, and reviewer signatures in local Room tables. The data model supports offline survey capture, save/reload integrity, record review, and export workflows."
       },
       {
         name: "ML_Project",
+        projectId: "ml-project-predictive-modeling-suite",
         tags: ["Modeling", "Metrics", "Prediction"],
         evidence:
           "The ML projects transform structured datasets into predictive models by cleaning features, encoding categories, training estimators, and evaluating results with metrics such as accuracy, MAE, MSE, and R-squared. The solution depends on data preparation and evidence-based model performance."
+      },
+      {
+        name: "Database Management of Business Financial Statements",
+        projectId: "database-management-business-financial-statements",
+        tags: ["SQL", "Schema", "Reporting"],
+        evidence:
+          "This project implements a data-driven reporting solution through relational schema design, SQL views, joins, and update operations. The evidence shows how stored financial data becomes structured, queryable information for business analysis."
       }
     ]
   },
@@ -87,21 +105,31 @@ const objectives = [
     projects: [
       {
         name: "RadconApp / Radiation Survey Tablet System",
+        projectId: "radconapp-radiation-survey-tablet-system",
         tags: ["Android", "Tablet", "Offline"],
         evidence:
           "RadconApp is designed specifically for mobile field use on an Android tablet. Its offline-first workflow, touch-based map interaction, local storage, and detector-reading integration address the constraints of mobile use in controlled environments."
       },
       {
         name: "Moro Maintenance & Asset Management System",
+        projectId: "moro-maintenance-asset-management-system",
         tags: ["Web", "Responsive", "Server"],
         evidence:
           "Moro provides the same maintenance workflow through a browser-based application that can support desktops, laptops, tablets, and phones. Its web architecture separates server logic from the interface while keeping records accessible across device types."
       },
       {
         name: "AI_Music / Dust & Echo",
+        projectId: "ai-music-dust-echo",
         tags: ["HTML", "CSS", "JavaScript"],
         evidence:
           "The Dust & Echo music-library site demonstrates a lightweight, browser-native presentation layer with organized audio, image, lyric, and description assets. It shows the ability to build a usable media interface without a heavyweight framework."
+      },
+      {
+        name: "Baby Habit Tracker",
+        projectId: "baby-habit-tracker",
+        tags: ["Python", "Tkinter", "SQLite"],
+        evidence:
+          "The Baby Habit Tracker expands the platform range with a desktop GUI application that records, displays, filters, and deletes persisted habit records. It supports the objective by showing application development outside the web and mobile stack."
       }
     ]
   },
@@ -111,27 +139,38 @@ const objectives = [
     projects: [
       {
         name: "CSCS / Containment Safety Control System",
+        projectId: "cscs-containment-safety-control-system",
         tags: ["Interfaces", "Event Bus", "Factory"],
         evidence:
           "CSCS is the strongest object-oriented example because it separates alarms, doors, ventilation, logging, data sources, announcements, UI, and core orchestration behind dedicated classes and interfaces. The factory and event bus designs reduce coupling and make subsystems easier to replace or extend."
       },
       {
         name: "RadconApp / Radiation Survey Tablet System",
+        projectId: "radconapp-radiation-survey-tablet-system",
         tags: ["MVVM", "Commands", "Repositories"],
         evidence:
           "RadconApp uses object-oriented and architectural patterns through ViewModels, repositories, DAOs, command classes, authentication managers, role guards, parsers, and export services. These boundaries encapsulate responsibilities and keep UI behavior separate from persistence and domain actions."
       },
       {
         name: "Jibby JSON Library",
+        projectId: "jibby-json-library",
         tags: ["Abstraction", "Iterators", "Types"],
         evidence:
           "Jibby models JSON values through a `Json` class, type checks, mutable and constant accessors, overloaded operators, iterators, parser/tokenizer components, serializer behavior, and custom exceptions. The API hides parsing and storage details behind a cleaner abstraction."
       },
       {
         name: "Payroll System",
+        projectId: "payroll-system",
         tags: ["Classes", "Encapsulation", "Search"],
         evidence:
           "The payroll project demonstrates class-based design through employee records, payroll management, private data members, controlled getters and setters, unique IDs, search behavior, raises, evaluations, and payroll totals."
+      },
+      {
+        name: "Conquest / Reign Strategy Game Engine",
+        projectId: "conquest-reign-strategy-game-engine",
+        tags: ["Engine", "Rules", "Abstraction"],
+        evidence:
+          "Conquest shows object-oriented design at a larger scale by evolving Reign from a playable Pygame prototype into an engine-first architecture. Rules, state, client behavior, validation, and future multiplayer concerns are separated so the system can grow without burying game logic in the interface."
       }
     ]
   },
@@ -141,24 +180,28 @@ const objectives = [
     projects: [
       {
         name: "CSC382 Data Structures",
+        projectId: "csc382-data-structures-portfolio",
         tags: ["Lists", "Stacks", "Queues", "Trees"],
         evidence:
           "The CSC382 projects directly implement and analyze linked lists, stacks, queues, heap sort, hashing, and binary trees. They show how different structures affect traversal, insertion, removal, ordering, memory use, and access patterns."
       },
       {
         name: "Jibby JSON Library",
+        projectId: "jibby-json-library",
         tags: ["Objects", "Arrays", "Variant"],
         evidence:
           "Jibby uses structured representations for JSON objects, arrays, primitive values, iterators, and token streams. The project demonstrates choosing data structures based on whether information needs key-based lookup, ordered traversal, nested storage, or type-safe value handling."
       },
       {
         name: "CSCS / Containment Safety Control System",
+        projectId: "cscs-containment-safety-control-system",
         tags: ["Events", "Collections", "State"],
         evidence:
           "CSCS uses event objects, published message flow, plant state models, zone collections, and log records to coordinate simulated safety behavior. The event structure acts as both data representation and communication mechanism between decoupled subsystems."
       },
       {
         name: "RadconApp / Radiation Survey Tablet System",
+        projectId: "radconapp-radiation-survey-tablet-system",
         tags: ["Entities", "Draft State", "Tables"],
         evidence:
           "RadconApp uses Room entities, DAOs, draft survey state, map templates, survey records, point collections, and survey-specific tables. Its data structures support editable map interaction, persistence, save/reload equivalence, and record-specific review."
@@ -195,6 +238,9 @@ function Boards() {
                     ))}
                   </div>
                   <p>{project.evidence}</p>
+                  <Link className="project-evidence-link" to={`/projects#${project.projectId}`}>
+                    View project evidence
+                  </Link>
                 </article>
               ))}
             </div>

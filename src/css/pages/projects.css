@@ -72,6 +72,24 @@
   font-size: 1.04rem;
 }
 
+.objective-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.objective-chip {
+  border: 1px solid rgba(31, 41, 51, 0.18);
+  border-radius: 4px;
+  background: #1f2933;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 6px 8px;
+}
+
 .tag-row {
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +111,20 @@
   margin-bottom: 18px;
   color: #1d4ed8;
   font-weight: 800;
+}
+
+.project-section {
+  margin-top: 20px;
+}
+
+.project-section h3 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 1.05rem;
+}
+
+.project-section p {
+  margin: 0;
 }
 
 .project-evidence {
