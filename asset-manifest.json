@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.a66f070a.css",
-    "main.js": "/my-portfolio/static/js/main.6ddf7094.js",
+    "main.js": "/my-portfolio/static/js/main.dd19b0d2.js",
     "static/media/Conquest.mp4": "/my-portfolio/static/media/Conquest.76d244bc13ec0db13270.mp4",
     "static/media/Budget.mp4": "/my-portfolio/static/media/Budget.9c759836304d15059055.mp4",
     "static/media/CSCS Demo.mp4": "/my-portfolio/static/media/CSCS Demo.7dc3f46b54a8043a2080.mp4",
@@ -18,8 +18,8 @@
     "static/media/power-plant.jpg": "/my-portfolio/static/media/power-plant.84da0aee5b6c3370427c.jpg",
     "static/media/map.jpg": "/my-portfolio/static/media/map.ccbe4a594f4782c8cd41.jpg",
     "static/media/home_page.jpg": "/my-portfolio/static/media/home_page.f9ef073eb341fa666d59.jpg",
+    "static/media/SIP311_Innovation_Brief.pdf": "/my-portfolio/static/media/SIP311_Innovation_Brief.8b94724923cd38b53c02.pdf",
     "static/media/db_schema.png": "/my-portfolio/static/media/db_schema.28f3aae8674b74055ffa.png",
-    "static/media/SIP311_Innovation_Brief.pdf": "/my-portfolio/static/media/SIP311_Innovation_Brief.63c19089a6f6c9cca4db.pdf",
     "static/media/sql_update.png": "/my-portfolio/static/media/sql_update.703d695ab847174ef49c.png",
     "static/media/sql_view.png": "/my-portfolio/static/media/sql_view.3396a8f25050f625861a.png",
     "static/media/Finance Tracker Application.pdf": "/my-portfolio/static/media/Finance Tracker Application.e61838ea37bdf648b02e.pdf",
@@ -28,10 +28,10 @@
     "static/media/LI-Logo.png": "/my-portfolio/static/media/LI-Logo.a95afc06831647f5fca2.png",
     "index.html": "/my-portfolio/index.html",
     "main.a66f070a.css.map": "/my-portfolio/static/css/main.a66f070a.css.map",
-    "main.6ddf7094.js.map": "/my-portfolio/static/js/main.6ddf7094.js.map"
+    "main.dd19b0d2.js.map": "/my-portfolio/static/js/main.dd19b0d2.js.map"
   },
   "entrypoints": [
     "static/css/main.a66f070a.css",
-    "static/js/main.6ddf7094.js"
+    "static/js/main.dd19b0d2.js"
   ]
 }
