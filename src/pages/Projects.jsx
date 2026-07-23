@@ -40,6 +40,7 @@ const projects = [
     link: "/sip",
     linkText: "View SIP page",
     mediaLinks: [
+      { type: "external", href: "https://youtu.be/MHp4Qvr-g1Y", label: "Watch demonstration" },
       { type: "pdf", src: innovationBrief, label: "Innovation brief" },
       { type: "image", src: topLevelDesign, label: "Top-level design" },
       { type: "image", src: homePage, label: "Home page" },
