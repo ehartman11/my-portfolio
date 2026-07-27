@@ -252,7 +252,10 @@ const projects = [
       "The stack/queue writeup compares LIFO and FIFO retrieval using the same conversation data to show behavioral differences.",
       "Heap sort, hashing, and binary-tree work demonstrate algorithm analysis, collision handling, ordering, traversal, and performance tradeoffs."
     ],
+    link: "https://github.com/ehartman11/CSC_382_Data_Structures",
+    linkText: "View repository",
     mediaLinks: [
+      { type: "external", href: "https://github.com/ehartman11/CSC_382_Data_Structures", label: "View repository" },
       { type: "external", href: "https://youtu.be/MsLhh_VBH2A", label: "Watch demonstration 1" },
       { type: "external", href: "https://youtu.be/9KOTy2to9BI", label: "Watch demonstration 2" }
     ]
